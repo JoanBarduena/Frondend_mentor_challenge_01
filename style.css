@@ -3,26 +3,26 @@
 /* font-family: 'Fraunces', serif;
 font-family: 'Montserrat', sans-serif; */
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100%;
+
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   background-color: hsl(30, 38%, 92%);
   color: hsl(228, 12%, 48%);
+
+  display: flex;
+  align-items: center;
 }
 
 main {
@@ -121,7 +121,20 @@ button.add-product img {
 }
 
 footer {
-  min-height: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media only screen and (max-width: 645px) {
@@ -145,6 +158,14 @@ footer {
   p.product-description,
   .product-price {
     padding-bottom: 23px;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
   }
 }
 
