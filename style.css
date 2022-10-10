@@ -124,4 +124,65 @@ footer {
   min-height: 20px;
 }
 
-@media only screen and (max-width: 645px) {}
+@media only screen and (max-width: 645px) {
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .img-container img {
+    max-height: 450px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  article .product-info {
+    display: block;
+  }
+
+  h6.product-section,
+  h1.product-name,
+  p.product-description,
+  .product-price {
+    padding-bottom: 23px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main {
+    margin: 20px 0;
+    padding: 0 20px;
+  }
+
+  .img-container img {
+    max-height: 300px;
+  }
+
+  h6.product-section,
+  h1.product-name,
+  p.product-description,
+  .product-price {
+    padding-bottom: 16px;
+  }
+
+
+  h6.product-section,
+  p.product-description,
+  p.old-price {
+    font-size: 12px;
+  }
+
+  h1.product-name,
+  p.new-price {
+    font-size: 28px;
+  }
+
+  button.add-product {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+
+  article.product-info {
+    padding: 24px;
+  }
+}
