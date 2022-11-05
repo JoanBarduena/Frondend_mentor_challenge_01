@@ -139,6 +139,11 @@ footer {
 
 @media only screen and (max-width: 645px) {
 
+  body {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
